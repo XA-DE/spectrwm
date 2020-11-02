@@ -1,5 +1,5 @@
 passwd &&
-pacman -S base-devel linux-lts linux-firmware elogind spectrwm ffmpeg feh imagemagick picom termite xorg-xinit xdg-utils os-prober grub xorg networkmanager networkmanager-runit
+pacman -S base-devel linux-lts linux-firmware efibootmgr elogind spectrwm ffmpeg feh imagemagick picom termite xorg-xinit xdg-utils os-prober grub xorg networkmanager networkmanager-runit
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub &&
 grub-mkconfig -o /boot/grub/grub.cfg &&
 ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && hwclock --systohc &&
