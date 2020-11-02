@@ -1,0 +1,6 @@
+curl -O https://blackarch.org/strap.sh
+sh strap.sh
+pacman -Syu
+git clone https://github.com/terroo/wallset down-wallset
+cd down-wallset
+sh install.sh
